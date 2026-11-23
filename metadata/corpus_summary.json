@@ -1,0 +1,133 @@
+{
+  "run": "v4_wild_full",
+  "total_scored_steps": 738619,
+  "total_scored_traces": 44359,
+  "total_scored_datasets": 10,
+  "clustering_datasets": 9,
+  "flagged_steps": 1186,
+  "flagged_traces": 991,
+  "by_dataset": {
+    "deepswe": {
+      "total_steps": 75940,
+      "total_traces": 1534,
+      "m24_ge_015": 11,
+      "m24_ge_025": 1,
+      "m24_ge_040": 0,
+      "flagged_steps": 11,
+      "flagged_traces": 11,
+      "excluded_from_clustering": false
+    },
+    "dtap_bench_benign": {
+      "total_steps": 290195,
+      "total_traces": 25768,
+      "m24_ge_015": 423,
+      "m24_ge_025": 122,
+      "m24_ge_040": 30,
+      "flagged_steps": 357,
+      "flagged_traces": 329,
+      "excluded_from_clustering": false
+    },
+    "impossiblebench": {
+      "total_steps": 30037,
+      "total_traces": 925,
+      "m24_ge_015": 1908,
+      "m24_ge_025": 649,
+      "m24_ge_040": 141,
+      "flagged_steps": 221,
+      "flagged_traces": 179,
+      "excluded_from_clustering": false
+    },
+    "kernelbench_cuda": {
+      "total_steps": 7222,
+      "total_traces": 169,
+      "m24_ge_015": 4,
+      "m24_ge_025": 1,
+      "m24_ge_040": 0,
+      "flagged_steps": 4,
+      "flagged_traces": 3,
+      "excluded_from_clustering": false
+    },
+    "kernelbench_hard": {
+      "total_steps": 19070,
+      "total_traces": 494,
+      "m24_ge_015": 14,
+      "m24_ge_025": 7,
+      "m24_ge_040": 4,
+      "flagged_steps": 14,
+      "flagged_traces": 12,
+      "excluded_from_clustering": false
+    },
+    "kernelbench_mega": {
+      "total_steps": 4305,
+      "total_traces": 116,
+      "m24_ge_015": 3,
+      "m24_ge_025": 0,
+      "m24_ge_040": 0,
+      "flagged_steps": 3,
+      "flagged_traces": 3,
+      "excluded_from_clustering": false
+    },
+    "shoppingbench": {
+      "total_steps": 9759,
+      "total_traces": 1500,
+      "m24_ge_015": 139,
+      "m24_ge_025": 56,
+      "m24_ge_040": 6,
+      "flagged_steps": 0,
+      "flagged_traces": 0,
+      "excluded_from_clustering": true
+    },
+    "swebench_verified": {
+      "total_steps": 53344,
+      "total_traces": 1500,
+      "m24_ge_015": 6,
+      "m24_ge_025": 1,
+      "m24_ge_040": 0,
+      "flagged_steps": 6,
+      "flagged_traces": 6,
+      "excluded_from_clustering": false
+    },
+    "tau3bench": {
+      "total_steps": 34096,
+      "total_traces": 1499,
+      "m24_ge_015": 41,
+      "m24_ge_025": 12,
+      "m24_ge_040": 2,
+      "flagged_steps": 41,
+      "flagged_traces": 30,
+      "excluded_from_clustering": false
+    },
+    "terminal_bench_2": {
+      "total_steps": 214651,
+      "total_traces": 10854,
+      "m24_ge_015": 627,
+      "m24_ge_025": 281,
+      "m24_ge_040": 114,
+      "flagged_steps": 529,
+      "flagged_traces": 418,
+      "excluded_from_clustering": false
+    }
+  },
+  "by_agent_top20": {
+    "Kimi K3": 159,
+    "googleadk/gemini-3-pro-preview": 99,
+    "Qwen 3.8 Max": 88,
+    "Terminus2__DeepSeek-V3.2": 85,
+    "openaisdk/gpt-oss-120b": 85,
+    "terminus-2__AfterQuery-GPT-OSS-20B": 57,
+    "openaisdk/gpt-5.4": 54,
+    "Terminus-KIRA__Claude-Opus-4.6": 51,
+    "Terminus2__GLM-5": 38,
+    "GLM 5.2": 32,
+    "Terminus-KIRA__Gemini-3.1-Pro-Preview": 29,
+    "claudesdk/claude-sonnet-4-5": 26,
+    "Terminus2__Kimi-k2.5": 24,
+    "NexAU-AHE__gpt-5.5": 23,
+    "openaisdk/gpt-5.1": 23,
+    "vix__claude-opus-4-7": 21,
+    "Terminus2__Minimax-m2.5": 21,
+    "openclaw/claude-opus-4-6": 21,
+    "claudesdk/claude-opus-4-6": 21,
+    "Judy__Gemini-3.1-Pro-Preview": 18
+  }
+}

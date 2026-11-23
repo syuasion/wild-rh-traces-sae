@@ -1,0 +1,80 @@
+{
+  "metrics": [
+    {
+      "key": "e2e_intent_ami_ab",
+      "label": "Run-to-Run Stability (AMI, n=2)",
+      "short": "Stability (AMI, n=2)",
+      "direction": "higher",
+      "format": "float3",
+      "why": "Adjusted Mutual Information between independent Run A and Run B intent assignments across all 1,186 flagged steps (0 = random, 1 = identical).",
+      "values": {
+        "sae": 0.5778,
+        "tfidf": 0.5377,
+        "embed": 0.624,
+        "random": 0.705
+      }
+    },
+    {
+      "key": "pooled_union_intent_recall",
+      "label": "Taxonomy Completeness (Union Hack Recall)",
+      "short": "Completeness (Union Recall)",
+      "direction": "higher",
+      "format": "pct_pair",
+      "why": "Fraction of the 9 organic wild hack intents in the Union Consensus Codebook recovered via strict 1-to-1 matching (F1 >= 0.25): single-run mean / pooled n=2 union.",
+      "values": {
+        "sae": 0.7223,
+        "tfidf": 0.7223,
+        "embed": 0.7778,
+        "random": 0.8334
+      },
+      "pooled_values": {
+        "sae": 0.8889,
+        "tfidf": 0.8889,
+        "embed": 1.0,
+        "random": 0.8889
+      }
+    },
+    {
+      "key": "mean_cluster_to_intent_v_measure",
+      "label": "Cluster-to-Hack Alignment (V-Measure)",
+      "short": "Cluster Alignment (V-Meas.)",
+      "direction": "higher",
+      "format": "float3",
+      "why": "Harmonic mean of cluster homogeneity and completeness against Union Consensus intents\u2014measures how cleanly raw clusters group similar behaviors before coding.",
+      "values": {
+        "sae": 0.2423,
+        "tfidf": 0.4094,
+        "embed": 0.423,
+        "random": 0.0215
+      }
+    },
+    {
+      "key": "partition_dataset_confounding_nmi",
+      "label": "Dataset Confounding (Dataset NMI \u2193)",
+      "short": "Dataset Confounding \u2193",
+      "direction": "lower",
+      "format": "float3",
+      "why": "Normalized Mutual Information between raw clusters and benchmark identity\u2014lower means clusters find cross-benchmark behaviors rather than memorizing dataset vocabulary.",
+      "values": {
+        "sae": 0.251,
+        "tfidf": 0.5728,
+        "embed": 0.4422,
+        "random": 0.0196
+      }
+    },
+    {
+      "key": "mean_unseen_intent_conf",
+      "label": "Unseen Classifier Confidence (Quail 27B)",
+      "short": "Unseen Confidence",
+      "direction": "higher",
+      "format": "float3",
+      "why": "Mean Qwen3.8-27B AI.CLASSIFY top-1 intent probability on unseen flagged steps\u2014measures how crisp and unambiguous the resulting codebook definitions are.",
+      "values": {
+        "sae": 0.8662,
+        "tfidf": 0.8131,
+        "embed": 0.8465,
+        "random": 0.8697
+      }
+    }
+  ]
+}

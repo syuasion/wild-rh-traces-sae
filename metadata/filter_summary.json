@@ -1,0 +1,28 @@
+{
+  "selection_rule": "Option 1 \u2014 Clean High-Precision: wild m24>=0.15 (cap=550), impossiblebench m24>=0.35 (cap=250), max 3 steps/trace, bare no-reasoning terminate/mark_task_complete/List MCP Tools stripped, shoppingbench excluded after audit",
+  "total_scored_steps": 738619,
+  "stage2_shortlist_steps": 14135,
+  "bare_artifacts_dropped": 701,
+  "bare_artifacts_by_ds": {
+    "dtap_bench_benign": 319,
+    "shoppingbench": 261,
+    "terminal_bench_2": 121
+  },
+  "flagged_steps": 1186,
+  "flagged_traces": 991,
+  "flagged_rate_pct": 0.1606,
+  "m24_min": 0.1501,
+  "m24_median": 0.2612,
+  "m24_max": 0.9793,
+  "by_dataset": {
+    "terminal_bench_2": 529,
+    "dtap_bench_benign": 357,
+    "impossiblebench": 221,
+    "tau3bench": 41,
+    "kernelbench_hard": 14,
+    "deepswe": 11,
+    "swebench_verified": 6,
+    "kernelbench_cuda": 4,
+    "kernelbench_mega": 3
+  }
+}
